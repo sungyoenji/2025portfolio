@@ -578,188 +578,79 @@ ul.like_txt li {
     border: 2px solid #eee;
     border-radius: 25px;
   }
-#Design .design_slideWrap .banner{
-    height: 380px;
-    overflow: hidden;
-}
 
-#Design .design_slideWrap img{
+  /* design */
+#Design .desing_wrap .desing_wrap_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px 0;
+}
+#Design .desing_wrap .desing_wrap_inner li{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+} 
+
+ #Design .desing_wrap .desing_wrap_inner a img {
+    width: 100%;
+    height: 520px;
     object-fit: cover;
     object-position: top;
-    width: 100%;
-    height: 100%;
-}
-#Design .design_slideWrap .design_slidBox1,
-#Design .design_slideWrap .design_slidBox2{
-    display: flex;
-    margin-right: 15px;
-    /* justify-content: space-between; */
-}
-
-
-#Design .design_slideWrap .design_slidBox1 li img{
-    width: 380px;
+    display: block;
+    border-radius: 8px;
 }
 
 .glightbox-clean .gslide-image img {
     width: 450px;
     max-height: none !important; /* 이미지 높이 제한 해제 */
     height: auto !important;
-  }
-  .gslide-image img[src*="original_summer_banner1"] {
-    width: 1200px !important;
-    height: auto !important;
-    max-height: none !important;
-  }
+}
+
   /* 이미지가 담기는 영역에 스크롤 설정 */
-  .glightbox-clean .gslide-media {
+.glightbox-clean .gslide-media {
     overflow-y: auto !important;
     max-height: 90vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start !important;
+}
+
+/* Ect. */
+#Design .ect_txt{
+    font-size: 120px;
+    font-weight: 700;
+    color: #eee;
+    margin: 80px 0;
+    opacity: 0;
+    text-align: end;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+#Design .ect_txt.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#Design .swiper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
   }
-  
-  /* 배경이 어두워서 흰 이미지가 잘 안보일 경우 대비용 */
-  .glightbox-clean .gslide-description {
-    color: #fff;
-  }
-#Design .design_slideWrap .design_slidBox2{
-    margin-top: 15px;
-}
-#Design .design_slideWrap .design_slidBox1 li,
-#Design .design_slideWrap .design_slidBox2 li{
-    border: 1px solid #ddd;
-    margin-right: 15px;
-    overflow: hidden;
-}
-#Design .design_slideWrap .design_slidBox1 li:last-child,
-#Design .design_slideWrap .design_slidBox2 li:last-child{
-    margin-right: 0;
-}
 
-#Design .design_slideWrap .design_slidBox2 li img{
-    height: 625px;
-    width: 380px;
-    /* object-fit: contain; */
-    object-fit: cover;
-    /* margin-right: 15px; */
-}
-
-#Design .design_slideWrap .design_slidBox2 li:nth-child(2) a{
-    width: 380px;
-    height: 625px;
-}
-#Design .design_slideWrap ul li {
-    overflow: hidden; 
-}
-
-#Design .design_slideWrap ul li a img {
-    transition: all 0.5s ease; 
-}
-
-#Design .design_slideWrap ul li a:hover img {
-    transform: scale(1.1);
-}
-/* Slide Button */
-#Design .inner .design_slideWrap_inner .slick-prev{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: -100px;
-    top: 50%;
-    transform: translateY(-50%);
-    text-indent: -999999px;
-}
-#Design .inner .design_slideWrap_inner .slick-prev:hover::before,
-#Design .inner .design_slideWrap_inner .slick-prev:hover::after,
-#Design .inner .design_slideWrap_inner .slick-next:hover::before,
-#Design .inner .design_slideWrap_inner .slick-next:hover::after{
-    background: #ccc;
-}
-#Design .inner .design_slideWrap_inner .slick-prev::before{
-    content: '';
-    width: 3px;
-    height: 25px;
-    background: #eee;
-    position: absolute;
-    left: 50%;
-    top: 16px;
-    transform: translateX(-50%);
-    transform: rotate(135deg);
-}
-#Design .inner .design_slideWrap_inner .slick-prev::after{
-    content: '';
-    width: 3px;
-    height: 25px;
-    background: #eee;
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    transform: rotate(-135deg);
-}
-#Design .inner .design_slideWrap_inner .slick-next{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: -100px;
-    top: 50%;
-    transform: translateY(-50%);
-    text-indent: -999999px;
-}
-#Design .inner .design_slideWrap_inner .slick-next::before{
-    content: '';
-    width: 3px;
-    height: 25px;
-    background: #eee;
-    position: absolute;
-    left: 50%;
-    top: 16px;
-    transform: translateX(-50%);
-    transform: rotate(-135deg);
-}
-#Design .inner .design_slideWrap_inner .slick-next::after{
-    content: '';
-    width: 3px;
-    height: 25px;
-    background: #eee;
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    transform: translateX(-50%);
-    transform: rotate(135deg);
-}
-#Design .inner .design_slideWrap_inner .slick-dots{
+#Design .swiper-slide {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+#Design .swiper-slide img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+    border-radius: 8px;
 }
-#Design .inner .design_slideWrap_inner .slick-dots li{
-    margin-right: 10px;
-}
-#Design .inner .design_slideWrap_inner .slick-dots li button{
-    width: 12px;
-    height: 12px;
-    margin-top: 5px;
-    background: #eee;
-    opacity: 0.3;
-    border-radius: 50%;
-    text-indent: -99999px;
-    opacity: 0.8;
-}
-#Design .inner .design_slideWrap_inner .slick-dots .slick-active button{
-    width: 20px;
-    height: 12px;
-    background: #ccc;
-    border-radius: 10px;
-    text-indent: -99999px;
-}
-
 
 /* section4-Contact */
 #Contact .inner{
