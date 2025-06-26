@@ -512,7 +512,9 @@ ul.like_txt li {
     width: 100%;
     height: auto;
 }
-
+#Coding .inner .Project .nonfiction img{
+    width: 120px;
+}
 /* section3_design */
 #Design{
     width: 1200px;
