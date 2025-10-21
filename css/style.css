@@ -46,7 +46,8 @@ header .inner .gnb{
     gap: 100px;
 }
 header .inner .gnb a:hover{
-    color: rgb(68, 116, 164);
+    /* color: rgb(68, 116, 164); */
+    color: #baabdd;
 }
 header .inner .gnb li a{
     display: block;
@@ -198,8 +199,16 @@ header.blurred {
     0%{left: -100%; top: 0;}
     100%{ left: 0; top:0;}
 }
+#About .protfolio .date dt{
+  float:left;
+  width:190px;            /* 왼쪽 폭을 '고정' */
+}
 
-
+/* #About .protfolio .date dd{
+    margin-left:-5%;
+    border: 1px solid red;
+} */
+#About .protfolio dl::after{ content:""; display:block; clear:both; }
 #About .protfolio dl dt{
     float: left;
 }
@@ -210,6 +219,32 @@ header.blurred {
 #About .protfolio dl dd{
     overflow: hidden;
 }
+#About .protfolio .education{
+    margin-left: 50px;
+    /* border: 1px solid  red; */
+}
+/* #About .protfolio .date{
+    display: block;
+    border: 1px solid violet;
+}
+
+#About .protfolio .date dd:nth-child(2){
+    padding-left: 30px;
+    margin-right: 0;
+
+}
+#About .protfolio .date dt:nth-child(5){
+    border: 1px solid blue;
+}
+#About .protfolio .date dd:nth-child(6){
+    inset-block: inherit;
+    margin-left: -300px;
+    border: 1px solid red;
+}
+#About .protfolio .date dd:nth-child(8){
+    padding-left: 14px;
+} */
+
 
 #About .inner .info div:first-child h2{
    font-size: 32px;
